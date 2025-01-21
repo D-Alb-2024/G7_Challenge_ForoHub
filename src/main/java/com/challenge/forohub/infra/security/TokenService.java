@@ -17,7 +17,7 @@ import static org.springframework.security.config.Elements.JWT;
 @Service
 public class TokenService {
 
-    @Value("${api.security.secret}")
+    @Value("${API_SECURITY_SECRET}")
     private String apiSecret;
 
     public String generarToken(Usuario usuario) {
